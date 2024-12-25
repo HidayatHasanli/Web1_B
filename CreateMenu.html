@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menyu Yarat və Yerlərini Dəyiş</title>
+    
+    <style>
+        #menu ul{
+            padding: 0%;
+        }
+        #menu ul li{
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: lightblue;
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+
+    <label>Add new Menu Item</label>
+    <input type="text" name="newMenu" id="newMenu">
+    <input type="submit" value="Add" onclick="addNewItem()">
+
+    <div id="menu"></div>
+    
+    <script type="text/javascript">
+        let arr = ['Menu 1','Menu 2','Menu 3'];
+
+        function getMenu(){
+            let menu = '<ul>'
+            for(let value of arr){
+             menu += '<li>' + value + '</li>';
+            }
+            menu += '</ul>'
+            return menu;
+        }
+
+        function showMenu(){
+            let divContent = document.getElementById("menu")
+            divContent.innerHTML= getMenu();
+        }
+
+        showMenu();
+
+        function addNewItem(){
+            let newMenu = document.getElementById("newMenu");
+            arr.push(newMenu.value);
+            newMenu.value = '';
+            showMenu();
+        }
+    </script>
+    <br>
+</body>
+</html>

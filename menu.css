@@ -1,0 +1,77 @@
+.Horizantal_menu ul{
+    background: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+    list-style-type: none;
+    margin: 0%;
+    margin-top: -8px;
+    margin-right: -8px;
+    padding: 0%;
+}
+.Horizantal_menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+.Horizantal_menu li{
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    margin-left: -8px;
+    background: #000;
+    width: 100px;
+}
+.Horizantal_menu ul :hover{
+    background: rgb(143, 8, 8);
+    transition: 0.5s;   
+}
+.Home_menu{
+    position: absolute;
+    z-index: 1;
+    background: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    margin: 0%;
+    margin-top: 18px;
+    margin-left: -2px;
+    padding: 0%;
+    display: none;
+}
+.Home_menu li{
+    width: 150px;
+}
+.Python_menu{
+    position: absolute;
+    z-index: 2;
+    background: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    margin: 0%;
+    margin-left: 168px;
+    margin-top: -20px;
+    padding: 0%;
+    display: none;
+}
+.News_menu{
+    position: absolute;
+    z-index: 1;
+    background: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    margin: 0%;
+    margin-top: 18px;
+    margin-left: -2px;
+    padding: 0%;
+    display: none;
+}
+.News_menu li{
+    width: 150px;
+}
+.Home_list:hover .Home_menu{
+    display: block;
+}
+.Python_list:hover .Python_menu{
+    display: block;
+}
+.News_list:hover .News_menu{
+    display: block;
+}
